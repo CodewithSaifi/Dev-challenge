@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+      * {
+        box-sizing: border-box;
+        font-family: "Nunito", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: linear-gradient(130deg, #b4436d, #7b3fa1);
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 16px;
+        backdrop-filter: blur(10px);
+      }
+
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 25px;
+      }
+
+      form {
+        display: grid;
+        gap: 20px;
+      }
+
+      label {
+        font-size: 14px;
+        margin-bottom: 6px;
+        display: block;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        font-size: 14px;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      .button {
+        background-color: white;
+        color: #7b3fa1;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #f1e8ff;
+      }
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .logo-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+      }
+
+      .logo-section img {
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-section">
+      <img src="b-logo.svg" alt="logo" />
+      <span class="logo-text">Becv</span>
+    </div>
+    <div>
+      <h1>Interested in our business pricing?</h1>
+      <p>
+        Fill out the form to view details and we’ll contact you as soon as
+        possible.
+      </p>
+    </div>
+    <form class="container">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+      <div>
+        <label for="email">Company Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div>
+        <label for="size">Company Size</label>
+        <select id="size">
+          <option>1-10 employees</option>
+          <option>10-50 employees</option>
+          <option selected>50-100 employees</option>
+          <option>100+ employees</option>
+        </select>
+      </div>
+      <div>
+        <label for="subject">Subject</label>
+        <select id="subject">
+          <option>General Inquiry</option>
+          <option selected>Building Landing pages</option>
+          <option>Custom Pricing</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="Your message..."
+        ></textarea>
+      </div>
+      <div>
+        <input type="submit" class="button" value="Contact Sales" />
+      </div>
+    </form>
+  </body>
+</html>
