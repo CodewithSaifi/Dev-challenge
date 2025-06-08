@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+      * {
+        font-family: nunito, Arial, sans-serif;
+      }
+
+      .back-color {
+        background-color: #b4436d;
+      }
+
+      .heading {
+        text-align: center;
+        margin: 8%;
+        font-size: 64px;
+        p {
+          font-size: 32px;
+        }
+      }
+
+      .form {
+        margin: 10%;
+        text-align: center;
+        background-color: #cdd5e037;
+        border-radius: 10px;
+        box-shadow: #cdd5e037;
+        display: flex;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+
+      input {
+        box-shadow: #ffffff;
+        border-radius: 8px;
+        display: flexbox;
+      }
+    </style>
+  </head>
+  <body class="back-color">
+    <div class="heading">
+      <h1>Interested in our business pricing?</h1>
+      <p>
+        Fill out the form to view details and we’ll contact you as soon as
+        possible.
+      </p>
+    </div>
+    <form class="form" method="get">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name" required />
+      </div>
+      <div>
+        <label for="email">Enter your email</label>
+        <input type="email" placeholder="Enter your email" required />
+      </div>
+      <div>
+        <label for="Company">Company size</label>
+        <input type="number" placeholder="Employees"/>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <input type="text" required>
+      </div>
+      <div>
+        <input type="button" value="Contact Sales">
+      </div>
+    </form>
+  </body>
+</html>

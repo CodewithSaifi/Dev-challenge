@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+            * {
+                font-family: Nunito, Arial, sans-serif;
+            }
+
+            .navigation {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .nav-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 10px;
+
+                a {
+                    display: flex;
+                    color: #223344;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+
+            .dark-mode-button {
+                transition: background-color 0.3s ease;
+                font-family: sans-serif;
+                margin: 0;
+                background-color: #111729;
+                border-radius: 50px;
+            }
+
+            .dark-mode {
+                background-color: #333;
+                color: white;
+            }
+
+            .dark-mode-button {
+                align-items: center;
+                padding: 5px 10px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav class="navigation">
+                    <img src="logo-light.svg" alt="Logo" />
+                    <div >
+                        <li class="nav-button"><a href="">Product</a></li>
+                        <li class="nav-button"><a href="">About us</a></li>
+                        <li class="nav-button"><a href="">Resource</a></li>
+                        <li class="nav-button"><a href="">Contact</a></li>
+                    </div>
+                    <div>
+                        <button class="dark-mode-button" onclick="toggleMode()">
+                            <img width="15" src="Moon-fill-light.svg" alt="" />
+                            <img width="15" src="Sun-fill.svg" alt="" />
+                        </button>
+
+                        <script>
+                            function toggleMode() {
+                                document.body.classList.toggle("dark-mode");
+                            }
+                        </script>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h2>😎 SIMPLE WAY TO COMMUNICATE</h2>
+                <h1>Actions for Accessibility in Design</h1>
+                <p>
+                    The fastest way to build and deploy websites with reusable
+                    components.
+                </p>
+            </div>
+            <div>
+                <img width="300px" src="main-image.png" alt="" />
+            </div>
+            <div>
+                <button onclick="getStarted()">GET STARTED</button>
+                <a href="">Get live demo</a>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li>
+                        <img src="tick-logo.svg" alt="" />No credit card
+                        required
+                    </li>
+                    <li>
+                        <img src="tick-logo.svg" alt="" />No software to install
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+    <script>
+        function getStarted() {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+</html>
