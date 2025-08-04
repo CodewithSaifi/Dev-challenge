@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarado</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <style>
+      #dark * {
+        color: azure;
+        background: #111729;
+      
+      }
+    </style>
+  </head>
+  <body class="font-poppins bg-[#F2F9FE]">
+    <!-- Web Navigation -->
+    <section class="flex web:hidden justify-between px-[80px] pb-[120px] pt-6">
+      <div>
+        <img id="logoM" src="Assets/logo-light.svg" alt="Logo" />
+      </div>
+      <div class="flex xl:gap-14 gap-10 font-semibold text-[#223344]">
+        <a
+          class="transition duration-300 ease-in-out hover:text-[#2A4DD0] hover:underline underline-offset-4"
+          href=""
+          >About us</a
+        >
+        <a
+          class="transition duration-300 ease-in-out hover:text-[#2A4DD0] hover:underline underline-offset-4"
+          href=""
+          >Product</a
+        >
+        <a
+          class="transition duration-300 ease-in-out hover:text-[#2A4DD0] hover:underline underline-offset-4"
+          href=""
+          >Resources</a
+        >
+        <a
+          class="transition duration-300 ease-in-out hover:text-[#2A4DD0] hover:underline underline-offset-4"
+          href=""
+          >Contact</a
+        >
+      </div>
+      <button
+        id="toggleBtn"
+        class="flex gap-[1px] !bg-[#223344] rounded-3xl p-[2px] pb-[2.5px]"
+      >
+        <img
+          class="moon border-none rounded-full"
+          src="Assets/Moon_fill_light.svg"
+          alt="Moon"
+        />
+        <img
+          class="sun bg-white rounded-full"
+          src="Assets/Sun_fill.svg"
+          alt="Moon"
+        />
+      </button>
+    </section>
+    <!-- Mobile Navigation -->
+    <section class="ph:hidden">
+      <div class="flex justify-between px-[20px] pt-3">
+        <div>
+          <img id="logo" src="Assets/logo-light.svg" alt="Logo" />
+        </div>
+        <div class="ph:hidden fixed top-4 right-4 z-[999]">
+          <img
+            id="menuBtn"
+            class="transition duration-500 ease-in-out cursor-pointer"
+            src="Assets/hamburger-button.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        id="navbar"
+        class="fixed top-0 right-0 transition-[margin-right] duration-500 ease-in-out h-screen w-2/4 mr-[-500px] bg-white z-50 flex flex-col items-center px-10 pt-20 gap-6 font-semibold text-[#223344]"
+      >
+        <a
+          class="transition duration-300 ease-in-out hover:text-[#2A4DD0] hover:underline underline-offset-4"
+          href=""
+          >About us</a
+        >
+        <a
+          class="transition duration-300 ease-in-out hover:text-[#2A4DD0] hover:underline underline-offset-4"
+          href=""
+          >Product</a
+        >
+        <a
+          class="transition duration-300 ease-in-out hover:text-[#2A4DD0] hover:underline underline-offset-4"
+          href=""
+          >Resources</a
+        >
+        <a
+          class="transition duration-300 ease-in-out hover:text-[#2A4DD0] hover:underline underline-offset-4"
+          href=""
+          >Contact</a
+        >
+        <button
+          id="toggleBtnP"
+          class="flex gap-[1px] !bg-[#223344] rounded-3xl p-[1.5px] pb-[1.8px]"
+        >
+          <img
+            class="moon w-[16px] border-none rounded-full"
+            src="Assets/Moon_fill_light.svg"
+            alt="Moon"
+          />
+          <img
+            class="sun w-[16px] bg-white rounded-full"
+            src="Assets/Sun_fill.svg"
+            alt="Moon"
+          />
+        </button>
+      </div>
+    </section>
+
+    <!-- Main section responsive -->
+    <section
+      class="grid grid-cols-1 gap-3 ph:grid-cols-2 px-4 sm:px-8 md:px-14 lg:px-20 xl:px-[80px]"
+    >
+      <div class="order-2 ph:order-1">
+        <div>
+          <h2 class="font-semibold text-[#223344] text-base sm:text-lg">
+            😎 SIMPLE WAY TO COMMUNICATE
+          </h2>
+          <h2
+            class="text-[24px] sm:text-[30px] md:text-[40px] lg:text-[54px] xl:text-[68px] font-bold text-[#223344] mt-4 mb-8 xl:pr-[145px] lg:pr-[100px] md:pr-[70px] sm:pr-[40px] pr-1"
+          >
+            Actions for Accessibility in Design
+          </h2>
+          <p class="font-semibold text-[#223344] text-base sm:text-lg mb-6">
+            The fastest way to build and deploy websites with reusable
+            components.
+          </p>
+        </div>
+
+        <div class="flex items-center text-start gap-4">
+          <a
+            class="!bg-[#2A4DD0] rounded-[12px] font-medium text-white text-base sm:text-lg py-3 px-8 transition duration-300 ease-in-out hover:!bg-[#294196]"
+            href=""
+            >GET STARTED</a
+          >
+          <a
+            class="font-semibold text-[#223344] text-base sm:text-lg transition duration-300 ease-in-out hover:text-[#2A4DD0] hover:underline underline-offset-4"
+            href=""
+            >Get live demo</a
+          >
+        </div>
+      </div>
+      <div
+        class="mt-10 md:mt-0 order-1 ph:order-2 flex justify-center items-center"
+      >
+        <img
+          class="xl:w-[600px] w-[450px] xl:translate-x-[50px]"
+          src="Assets/hero-image-simple-homepage.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <div
+      class="flex gap-4 font-medium text-[#223344] pt-2 pl-4 sm:pl-8 md:pl-14 lg:px-20 xl:px-[80px]"
+    >
+      <div class="flex gap-2 pt-0 lg:pt-6 md:pt-6 sm:pt-5 items-center">
+        <img src="Assets/Done_ring_round_fill.svg" alt="tick" />
+        <p class="text-[9px] sm:text-[14px]">No credit card required</p>
+      </div>
+      <div class="flex gap-2 pt-0 lg:pt-6 md:pt-6 sm:pt-5 items-center">
+        <img src="Assets/Done_ring_round_fill.svg" alt="tick" />
+        <p class="text-[9px] sm:text-[14px]">No software to install</p>
+      </div>
+    </div>
+    <img src="" alt="" />
+    <script>
+      let btn = document.querySelector("#toggleBtn");
+      let btnP = document.querySelector("#toggleBtnP");
+      let drk = document.querySelector(".dark");
+      let logo = document.querySelector("#logo");
+      let moon = document.querySelector(".moon");
+      let sun = document.querySelector(".sun");
+      let logoM = document.querySelector("#logoM");
+      let menuBtn = document.querySelector("#menuBtn");
+      let navbar = document.querySelector("#navbar");
+      function openMenu() {
+        menuBtn.src = "Assets/close-button.svg";
+        navbar.style.marginRight = "0px";
+        menuBtn.style.transform = "rotate(90deg)";
+      }
+      function closeMenu() {
+        menuBtn.src = "Assets/hamburger-button.svg";
+        navbar.style.marginRight = "-500px";
+        menuBtn.style.transform = "";
+      }
+      let isOpen = false;
+      menuBtn.addEventListener("click", () => {
+        if (isOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+        isOpen = !isOpen;
+      });
+      function dark() {
+        drk.id = "dark";
+        logo.src = "Assets/logo-dark.svg";
+        logoM.src = "Assets/logo-dark.svg";
+        moon.style.setProperty("background-color", "white", "important");
+        moon.src = "Assets/Moon_fill.svg";
+        sun.style.setProperty("background-color", "#223344", "important");
+        sun.src = "Assets/Sun_fill_white.svg";
+      }
+      function light() {
+        drk.removeAttribute("id");
+        logo.src = "Assets/logo-light.svg";
+        logoM.src = "Assets/logo-light.svg";
+        moon.style.removeProperty("background-color");
+        moon.src = "Assets/Moon_fill_light.svg";
+        sun.style.removeProperty("background-color");
+        sun.src = "Assets/Sun_fill.svg";
+      }
+
+      let isDark = false;
+
+      btn.addEventListener("click", () => {
+        if (isDark) {
+          light();
+        } else {
+          dark();
+        }
+        isDark = !isDark;
+      });
+      btnP.addEventListener("click", () => {
+        if (isDark) {
+          light();
+        } else {
+          dark();
+        }
+        isDark = !isDark;
+      });
+    </script>
+  </body>
+</html>

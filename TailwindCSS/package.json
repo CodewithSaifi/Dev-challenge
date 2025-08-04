@@ -1,0 +1,21 @@
+{
+  "name": "tcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "this": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+    "live": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "vite": "^7.0.6"
+  }
+}
